@@ -1,86 +1,48 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sérac — Assistance et support</title>
-  <meta name="description" content="Page d’assistance officielle de l’app Sérac : contact, aide, FAQ, signalement de bug.">
-  <style>
-    :root {
-      --bg: #0b0c0f;
-      --card: #151823;
-      --text: #e8ecf3;
-      --muted: #a8b0be;
-      --accent: #3aa6ff;
-      --ok: #4ade80;
-      --warn: #f59e0b;
-      --err: #ef4444;
-      --radius: 16px;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height: 1.55; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 920px; margin: 0 auto; padding: 28px 18px 56px; }
-    header { backdrop-filter: blur(10px); position: sticky; top: 0; background: rgba(11,12,15,0.6); border-bottom: 1px solid rgba(255,255,255,0.06); }
-    header .inner { max-width: 920px; margin: 0 auto; padding: 16px 18px; display: flex; align-items: center; gap: 14px; }
-    .logo { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg,#5eead4,#3aa6ff); box-shadow: 0 6px 20px rgba(58,166,255,0.4); }
-    h1 { font-size: clamp(22px, 3.5vw, 34px); margin: 18px 0 8px; }
-    h2 { font-size: clamp(18px, 2.4vw, 24px); margin: 26px 0 12px; }
-    p  { margin: 10px 0; color: var(--text); }
-    .muted { color: var(--muted); }
-    .card { background: linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); padding: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
-    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    @media (min-width: 820px) { .grid { grid-template-columns: 1fr 1fr; } }
-    .cta { display: inline-block; padding: 10px 16px; border-radius: 12px; background: var(--accent); color: #0a0a0a; font-weight: 600; box-shadow: 0 8px 22px rgba(58,166,255,0.45); }
-    .list { margin: 0; padding-left: 18px; }
-    footer { margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 16px; }
-    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,0.06); font-size: 13px; }
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Description" content="Page d’assistance officielle de l’app Sérac : contact, aide, FAQ, signalement de bug.">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    body {background-color: #0b0b0d}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0; min-height: 15.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0}
+    p.p4 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #98a0b0; -webkit-text-stroke: #98a0b0}
+    p.p6 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #3092ff; -webkit-text-stroke: #3092ff}
+    p.p7 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0}
+    p.p8 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px '.SF NS'; color: #0a0a0a; -webkit-text-stroke: #0a0a0a}
+    li.li9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; background-color: rgba(255, 255, 255, 0.059)}
+    span.s3 {font-kerning: none; color: #98a0b0; -webkit-text-stroke: 0px #98a0b0}
+    span.s4 {font-kerning: none; color: #e2e7f0; -webkit-text-stroke: 0px #e2e7f0}
+    span.s5 {font-kerning: none; color: #3092ff; -webkit-text-stroke: 0px #3092ff}
+    span.s6 {font-kerning: none; background-color: #3092ff}
+    span.s7 {-webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: disc}
   </style>
 </head>
 <body>
-  <header>
-    <div class="inner">
-      <div class="logo" aria-hidden="true"></div>
-      <div>
-        <div class="badge">Sérac — Centre d’assistance</div>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <h1>Besoin d’aide avec <span class="muted">Sérac</span> ?</h1>
-    <p class="muted">Bienvenue sur la page d’assistance officielle de l’app <strong>Sérac</strong>. Vous trouverez ici les moyens de nous contacter, la FAQ et les informations utiles.</p>
-
-    <div class="grid" style="margin-top:22px;">
-      <section class="card">
-        <h2>Contacter le support</h2>
-        <p>• Par e‑mail : <a href="mailto:REMPLACEZ-MOI@exemple.com">REMPLACEZ-MOI@exemple.com</a></p>
-        <p>• Signaler un bug / demander une fonctionnalité : <a href="https://github.com/USERNAME/REPO/issues" target="_blank" rel="noopener">Ouvrir un ticket GitHub</a></p>
-        <p>• Suivre l’évolution : <a href="https://github.com/USERNAME/REPO/discussions" target="_blank" rel="noopener">Discussions &amp; annonces</a></p>
-        <p class="muted">Remplacez l’adresse e‑mail et les liens GitHub par les vôtres avant publication.</p>
-        <p><a class="cta" href="mailto:REMPLACEZ-MOI@exemple.com">Écrire au support</a></p>
-      </section>
-
-      <section class="card">
-        <h2>Questions fréquentes (FAQ)</h2>
-        <ul class="list">
-          <li><strong>L’app est‑elle gratuite&nbsp;?</strong> Certaines fonctionnalités sont gratuites. Des options «&nbsp;Pro&nbsp;» peuvent exister selon les versions.</li>
-          <li><strong>Où sont stockées mes données&nbsp;?</strong> Les données sont stockées localement sur l’appareil et/ou synchronisées via iCloud/CloudKit selon vos réglages.</li>
-          <li><strong>Comment supprimer mon compte ou mes données&nbsp;?</strong> Envoyez‑nous une demande par e‑mail depuis l’adresse associée à votre compte.</li>
-        </ul>
-      </section>
-    </div>
-
-    <section class="card" style="margin-top:16px;">
-      <h2>Données &amp; confidentialité</h2>
-      <p>Consultez la <a href="./serac-politique-confidentialite-fr.html">Politique de confidentialité</a> pour en savoir plus (collecte, finalités, conservation, droits RGPD).</p>
-      <p>Pour toute question relative à la confidentialité, écrivez‑nous à <a href="mailto:REMPLACEZ-MOI@exemple.com">REMPLACEZ-MOI@exemple.com</a>.</p>
-    </section>
-
-    <footer>
-      <p class="muted">Dernière mise à jour&nbsp;: 27/10/2025 — © 2025 Sérac</p>
-    </footer>
-  </main>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s2">Sérac — Centre d’assistance</span></p>
+<h1 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0"><span class="s1"><b>Besoin d’aide avec </b></span><span class="s3"><b>Sérac</b></span><span class="s1"><b> ?</b></span></h1>
+<p class="p4"><span class="s1">Bienvenue sur la page d’assistance officielle de l’app <b>Sérac</b>. Vous trouverez ici les moyens de nous contacter, la FAQ et les informations utiles.</span></p>
+<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0"><span class="s1"><b>Signaler un bug / demander une fonctionnalité</b></span></h2>
+<p class="p6"><span class="s4">• Par e‑mail : <a href="mailto:julien.pul@icloud.com"><span class="s5">julien.pul@icloud.com</span></a></span></p>
+<p class="p8"><span class="s6"><a href="mailto:julien.pul@icloud.com"><b>Écrire au support</b><span class="s1"><b></b></span></a></span></p>
+<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0"><span class="s1"><b>Questions fréquentes (FAQ)</b></span></h2>
+<ul class="ul1">
+  <li class="li9"><span class="s7"><b></b></span><span class="s1"><b>L’app est‑elle gratuite ?</b> Certaines fonctionnalités sont gratuites. Des options « Pro » peuvent exister selon les versions.</span></li>
+  <li class="li9"><span class="s7"><b></b></span><span class="s1"><b>Où sont stockées mes données ?</b> Les données sont stockées localement sur l’appareil et/ou synchronisées via iCloud/CloudKit selon vos réglages.</span></li>
+  <li class="li9"><span class="s7"><b></b></span><span class="s1"><b>Comment supprimer mon compte ou mes données ?</b> Envoyez‑nous une demande par e‑mail depuis l’adresse associée à votre compte.</span></li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #e2e7f0; -webkit-text-stroke: #e2e7f0"><span class="s1"><b>Données &amp; confidentialité</b></span></h2>
+<p class="p7"><span class="s1">Consultez la <a href="https://julienpul-cpu.github.io/Serac-privacy/serac-politique-confidentialite-fr.html"><span class="s5">Politique de confidentialité</span></a> pour en savoir plus (collecte, finalités, conservation, droits RGPD).</span></p>
+<p class="p7"><span class="s1">Pour toute question relative à la confidentialité, écrivez‑nous à <a href="mailto:julien.pul@icloud.com"><span class="s5">julien.pul@icloud.com</span></a>.</span></p>
+<p class="p4"><span class="s1">Dernière mise à jour : 27/10/2025 — © 2025 Sérac</span></p>
 </body>
 </html>
