@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sérac — Accueil</title>
+  <meta name="description" content="Accueil du site de Sérac. Redirection vers la page d’assistance.">
+  <!-- Redirection instantanée vers la page de support -->
+  <meta http-equiv="refresh" content="0; url=./support-serac.html">
+  <script>
+    // JS fallback for certains navigateurs / politiques de sécurité
+    (function() {
+      var target = "./support-serac.html";
+      try { window.location.replace(target); }
+      catch (e) { window.location.href = target; }
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --card: #151823;
+      --text: #e8ecf3;
+      --muted: #a8b0be;
+      --accent: #3aa6ff;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height: 1.55; }
+    .container { max-width: 880px; margin: 0 auto; padding: 40px 18px; }
+    .card { background: linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); padding: 22px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    h1 { font-size: clamp(22px, 3.2vw, 34px); margin: 0 0 8px; }
+    p { margin: 10px 0; }
+    a.button { display: inline-block; margin-right: 12px; padding: 10px 16px; border-radius: 12px; background: var(--accent); color: #0a0a0a; font-weight: 600; text-decoration: none; }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h1>Sérac</h1>
+      <p class="muted">Vous allez être redirigé vers la page d’assistance…</p>
+      <p>
+        Si rien ne se passe, cliquez ici : <a class="button" href="./support-serac.html" rel="noopener">Ouvrir l’assistance</a>
+      </p>
+      <p>
+        Besoin de la politique de confidentialité ? <a href="./serac-politique-confidentialite-fr.html" rel="noopener">Consulter la politique</a>
+      </p>
+      <p class="muted">Dernière mise à jour : 27/10/2025</p>
+    </div>
+  </main>
+  <noscript>
+    <div class="container">
+      <div class="card">
+        <p><strong>JavaScript désactivé :</strong> utilisez ces liens&nbsp;:
+          <a href="./support-serac.html">Assistance</a> ·
+          <a href="./serac-politique-confidentialite-fr.html">Politique de confidentialité</a>
+        </p>
+      </div>
+    </div>
+  </noscript>
+</body>
+</html>
